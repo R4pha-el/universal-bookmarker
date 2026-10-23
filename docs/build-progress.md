@@ -17,6 +17,8 @@ Domain/capture, SwiftUI features, persistence/sync integration, private backend,
 
 Source is published to [GitHub main](https://github.com/R4pha-el/universal-bookmarker) at `39c487b`, preserving seed history. The seed `test` file was deleted in `6303ecdea13a940db9efcba4a9eb4dc3f7f7151e`.
 
-The [first CI run](https://github.com/R4pha-el/universal-bookmarker/actions/runs/39993958538) passed portable Swift tests and failed on a Share capture native compile error and an unsupported Node.js 22 test-runner option. Native fixes and a switch to Node.js 24 are in progress; a successful build/test rerun is not yet recorded. Clearing the placeholder repository description requires owner action because the connection's administration request returned 403.
+CI corrections address legacy Share provider return values, the supported Node.js 24 runtime, and matching Debug simulator architectures. Clearing the placeholder repository description requires owner action because the connection's administration request returned 403.
 
-The web prototype remains unchanged. Native compilation, simulator execution, live backend provisioning, signed-device validation, and final branding remain tracked in build status.
+The web prototype remains unchanged. Live backend provisioning, signed-device validation, minimum-runtime coverage, and final branding remain tracked in build status.
+
+[Workflow 39996270281](https://github.com/R4pha-el/universal-bookmarker/actions/runs/39996270281) passed at app-source commit `e988089`: 16 core, 21 cloud, 14 backend, 9 native persistence/capture, and 1 UI navigation test (61 total), plus the unsigned Xcode simulator build and generated-project check. Live backend, signing, device Share capture, minimum-runtime coverage, final branding, and web integration remain separate release work.

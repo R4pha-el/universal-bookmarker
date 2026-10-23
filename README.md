@@ -6,7 +6,7 @@ A native iPhone library for links, screenshots, photos, PDFs, and files. Save fi
 
 ## Development status
 
-This repository contains the SwiftUI app, Share extension, portable Swift packages, Supabase backend source, tests, and GitHub Actions. It is a development build: native Xcode validation, live backend setup, signing, and device testing remain required. See [verification and remaining work](docs/build-status.md).
+This repository contains the SwiftUI app, Share extension, portable Swift packages, Supabase backend source, tests, and GitHub Actions. It is a development build: the macOS simulator build and native tests pass; live backend setup, signing, and device testing remain required. See [verification and remaining work](docs/build-status.md).
 
 The [existing web prototype](https://universal-bookmark.vercel.app/) has not been changed or connected to this backend. Its source is not included here. The [shared API contract](docs/backend-contract.md) provides the integration boundary for a future web client.
 
