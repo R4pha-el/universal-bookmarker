@@ -92,8 +92,9 @@ final class ShareItemLoader {
     }
 
     private func loadWebURL(_ provider: NSItemProvider) async throws -> URL {
-        try await withCheckedThrowingContinuation { continuation in
-            progress = provider.loadItem(forTypeIdentifier: UTType.url.identifier, options: nil) { value, error in
+        progress = nil
+        return try await withCheckedThrowingContinuation { continuation in
+            provider.loadItem(forTypeIdentifier: UTType.url.identifier, options: nil) { value, error in
                 if let error { continuation.resume(throwing: error); return }
                 let rawURL: URL?
                 if let url = value as? URL { rawURL = url }
@@ -119,8 +120,9 @@ final class ShareItemLoader {
     private enum RepresentationError: Error { case unavailable }
 
     private func copyFileURL(_ provider: NSItemProvider, destination: URL) async throws -> CopiedRepresentation {
-        try await withCheckedThrowingContinuation { continuation in
-            progress = provider.loadItem(forTypeIdentifier: UTType.fileURL.identifier, options: nil) { value, error in
+        progress = nil
+        return try await withCheckedThrowingContinuation { continuation in
+            provider.loadItem(forTypeIdentifier: UTType.fileURL.identifier, options: nil) { value, error in
                 if let error { continuation.resume(throwing: error); return }
                 guard let url = value as? URL, url.isFileURL else {
                     continuation.resume(throwing: StagingError.missingProviderFile)

@@ -46,7 +46,7 @@ python3 scripts/generate_project.py
 git diff --exit-code -- ios/UniversalBookmarker.xcodeproj
 ```
 
-Backend tests require Node.js 22 or newer. They use an embedded PostgreSQL engine with Supabase auth/storage fixtures. Portable checks run on Linux or macOS. The [GitHub workflow](.github/workflows/ios.yml) also builds the app and runs native tests on a macOS simulator; portable success alone does not establish an iOS build result.
+Backend tests require Node.js 24 or newer. They use an embedded PostgreSQL engine with Supabase auth/storage fixtures. Portable checks run on Linux or macOS. The [GitHub workflow](.github/workflows/ios.yml) also builds the app and runs native tests on a macOS simulator; portable success alone does not establish an iOS build result.
 
 ## Repository guide
 

@@ -4,7 +4,7 @@ Keep changes focused and describe the user-visible problem before implementation
 
 ## Development
 
-Use Swift 6, iOS 17-compatible APIs, and Node.js 22 or newer for backend tests. See the [README](README.md) for setup and check commands. Keep backend and signing settings in the ignored `ios/Configuration/Secrets.xcconfig`. Use disposable accounts and sample files for testing.
+Use Swift 6, iOS 17-compatible APIs, and Node.js 24 or newer for backend tests. See the [README](README.md) for setup and check commands. Keep backend and signing settings in the ignored `ios/Configuration/Secrets.xcconfig`. Use disposable accounts and sample files for testing.
 
 The Xcode project is generated. Change `scripts/generate_project.py`, regenerate, and commit both the generator and resulting project when its structure changes. Do not edit generated project identifiers by hand.
 
