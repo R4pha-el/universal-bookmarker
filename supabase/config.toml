@@ -1,0 +1,8 @@
+project_id = "universal-bookmarker"
+
+[functions.delete-account]
+# Both handlers verify the bearer token against GoTrue before any admin action.
+verify_jwt = false
+
+[functions.cleanup-originals]
+verify_jwt = false

@@ -1,0 +1,8 @@
+APP_BUNDLE_IDENTIFIER = com.example.universalbookmarker
+APP_GROUP_IDENTIFIER = group.$(APP_BUNDLE_IDENTIFIER)
+MARKETING_VERSION = 0.1.0
+CURRENT_PROJECT_VERSION = 1
+SUPABASE_URL =
+SUPABASE_PUBLISHABLE_KEY =
+// Create this ignored file to configure your own team, identifiers and backend.
+#include? "Secrets.xcconfig"

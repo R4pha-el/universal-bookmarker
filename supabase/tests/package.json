@@ -1,0 +1,7 @@
+{
+  "name": "universal-bookmarker-backend-tests",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --experimental-strip-types --test --test-isolation=none backend.test.mjs edge.test.mjs" },
+  "devDependencies": { "@electric-sql/pglite": "0.3.14" }
+}

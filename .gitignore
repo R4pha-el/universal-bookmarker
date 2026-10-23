@@ -7,3 +7,7 @@ Secrets.xcconfig
 xcuserdata/
 DerivedData/
 .build/
+node_modules/
+.swiftpm/
+__pycache__/
+*.xcresult/
