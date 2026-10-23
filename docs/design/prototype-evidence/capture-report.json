@@ -1,0 +1,6 @@
+{
+  "resources": 8,
+  "network_failures": [],
+  "page_errors": [],
+  "transport": "Python verified TLS through inherited proxy, browser request fulfillment"
+}
