@@ -1,7 +1,7 @@
 # Universal Bookmarker: iOS app and shared-library contract
 
 Date: 2026-10-23
-Status: ready for user review; visual direction accepted, written specification not yet approved
+Status: implementation authorised by the user; source implemented, native and live-service validation tracked in [build status](../../build-status.md)
 
 ## What this version will do
 
@@ -25,7 +25,7 @@ The first build includes the native app, Share extension, backend migrations and
 
 Library first makes scattered saves visible immediately. A search-first home is less useful before a library grows; a board-first home makes mixed documents and links harder to scan. The chosen layout keeps browsing useful and makes global search one tap away.
 
-Use a managed Supabase backend because web and iOS both need access to the same private records and files. CloudKit would require a separate web identity/integration strategy; a custom hosted API adds service operations before the saving workflow is established. These are architectural choices proposed for review, not already provisioned services.
+Use a managed Supabase backend because web and iOS both need access to the same private records and files. CloudKit would require a separate web identity/integration strategy; a custom hosted API adds service operations before the saving workflow is established. These architectural choices are implemented in source; the services still require provisioning.
 
 ## Screens and navigation
 

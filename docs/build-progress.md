@@ -1,24 +1,20 @@
 # Implementation ledger
 
-Plan: `docs/superpowers/plans/2026-10-22-ios-app.md`
+Plan: [iOS implementation](superpowers/plans/2026-10-22-ios-app.md). Verification: [build status](build-status.md).
 
 ## Decisions
 
-- User's "now you can build" authorises implementation from the written specification with the subsequently supplied visual references. Continue without further design approval prompts.
-- Work on a feature branch in this new dedicated project directory. No existing product code or user changes are present; avoid another worktree and preserve the documentation commit.
-- Keep platform floor at iOS 17, using Swift 6 mode and available system APIs. The external SwiftUI skill's newer platform defaults do not replace the agreed target.
-- Native compile/device validation requires macOS; do not label parser checks as a native build.
+- The user's “now you can build” authorizes implementation from the specification and supplied visual references.
+- A dedicated project directory and feature branch preserve the initial documentation history.
+- iOS 17 and Swift 6 remain the platform target.
+- The app starts empty and device-only; samples are opt-in and cloud settings optional.
+- The later explicit request to push all code authorizes using the supplied repository after the visibility discussion.
+- Portable checks are recorded separately from native and signed-device results.
 
-## Interface checks
+## Delivery
 
-| Tasks | Shared boundary | Decision |
-| --- | --- | --- |
-| 1 / 3 / 4 / 5 | BookmarkCore value types and capture JSON | Public Sendable/Codable domain values; no SwiftData in the extension |
-| 2 / 4 | Auth, mutation/changes RPC and private objects | Backend agent documents wire JSON; app adapter follows it |
-| 3 / 4 | LibraryStore | Main-actor observable store; UI owns views only |
-| 1 / 5 | Package and app targets | Local Swift package, iOS 17, Swift 6 |
+Domain/capture, SwiftUI features, persistence/sync integration, private backend, Share extension, Xcode targets, test suites, CI, and setup documentation are implemented. Local checks passed: Core 16, Cloud 21, backend 14; 48 native Swift files parsed, project regeneration deterministic, plist/scheme structure valid.
 
-## Progress
+Source is committed locally and merged with the remote seed history. GitHub upload is blocked: git returned 403 Permission denied; the official connector returned 403 Resource not accessible by integration for blob creation. Repository contents write permission must be enabled before publication and macOS CI can run. No source upload or Actions success is claimed.
 
-- Baseline: clean documentation-only repository, commit fb2c0bf; no pre-existing product tests.
-- GitHub: requested repository returns 404 to the connection; createRepository previously denied by integration.
+The web prototype remains unchanged. Native compilation, simulator execution, live backend provisioning, signed-device validation, and final branding remain tracked in build status.
