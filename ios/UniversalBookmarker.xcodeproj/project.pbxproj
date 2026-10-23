@@ -573,6 +573,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "YES";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
 				"ENABLE_TESTABILITY" = "YES";
 				"INFOPLIST_FILE" = "Configuration/App-Info.plist";
@@ -594,6 +595,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "NO";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
 				"ENABLE_TESTABILITY" = "NO";
 				"INFOPLIST_FILE" = "Configuration/App-Info.plist";
@@ -734,6 +736,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "YES";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
 				"ENABLE_TESTABILITY" = "YES";
 				"INFOPLIST_FILE" = "ShareExtension/Info.plist";
@@ -756,6 +759,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "NO";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
 				"ENABLE_TESTABILITY" = "NO";
 				"INFOPLIST_FILE" = "ShareExtension/Info.plist";
@@ -887,6 +891,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "YES";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
 				"ENABLE_TESTABILITY" = "YES";
 				"GENERATE_INFOPLIST_FILE" = "YES";
@@ -908,6 +913,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "NO";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
 				"ENABLE_TESTABILITY" = "NO";
 				"GENERATE_INFOPLIST_FILE" = "YES";
@@ -1003,6 +1009,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "YES";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
 				"ENABLE_TESTABILITY" = "YES";
 				"GENERATE_INFOPLIST_FILE" = "YES";
@@ -1023,6 +1030,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "NO";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
 				"ENABLE_TESTABILITY" = "NO";
 				"GENERATE_INFOPLIST_FILE" = "YES";
@@ -1147,6 +1155,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "YES";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
 				"ENABLE_TESTABILITY" = "YES";
 				"CLANG_ENABLE_MODULES" = "YES";
@@ -1165,6 +1174,7 @@
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
 				"CODE_SIGN_STYLE" = "Automatic";
 				"SWIFT_STRICT_CONCURRENCY" = "complete";
+				"ONLY_ACTIVE_ARCH" = "NO";
 				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
 				"ENABLE_TESTABILITY" = "NO";
 				"CLANG_ENABLE_MODULES" = "YES";

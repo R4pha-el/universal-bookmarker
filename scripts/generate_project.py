@@ -41,6 +41,7 @@ def configurations(name, extra):
         settings = {'SWIFT_VERSION':'6.0','IPHONEOS_DEPLOYMENT_TARGET':'17.0','TARGETED_DEVICE_FAMILY':'1',
                     'SDKROOT':'iphoneos','SUPPORTED_PLATFORMS':'iphoneos iphonesimulator',
                     'CODE_SIGN_STYLE':'Automatic','SWIFT_STRICT_CONCURRENCY':'complete',
+                    'ONLY_ACTIVE_ARCH':'YES' if mode=='Debug' else 'NO',
                     'SWIFT_OPTIMIZATION_LEVEL':'-Onone' if mode=='Debug' else '-O',
                     'ENABLE_TESTABILITY':'YES' if mode=='Debug' else 'NO',**extra}
         refs.append(obj(name+'-'+mode,'XCBuildConfiguration',baseConfigurationReference=config_ref,name=mode,buildSettings=settings))
